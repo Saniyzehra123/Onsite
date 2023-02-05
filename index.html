@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css" </head>
+
+<body>
+    <div class="surveycontainer">
+        <div class="left">
+            <div class="profile"> <img src="https://icon-library.com/images/manager-icon-png/manager-icon-png-7.jpg" />
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="logo"> <img src="https://webengage.com/wp-content/uploads/2019/04/WebEngage-logo-1.png" />
+            </div>
+            <h2>Get a free</h2>
+            <p>consultation with an expert</p>
+            <form id="myform">
+                <div>
+                    <input text="email" id="email" placeholder="Enter your email" required="required"></input>
+
+                    <div class="country">
+                        <div class="select">
+                            <select id="category">
+                                <option value="default">--</option>
+                            </select>
+                        </div>
+
+                        
+                        <input type="text" id="mobile" placeholder="Enter your mobile" required="required"
+                           minlength="10" maxlength="10" />
+                
+                        </div>
+
+                    <input type="submit" value="Talk to us"   />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- <script src="./survey.js"> </script> -->
+
+<script type="module">
+    import country from "./survey.js"
+
+    let mydata = country()
+    //  let mydata=[];
+    //  mydata.push(data)
+    // console.log("country", mydata)
+    document.querySelector("#myform").addEventListener("submit", addItem)
+
+
+
+    // function onchange(){
+    //     mydata.map((item) =>(
+    //     console.log("itm",item)
+    // ))
+
+    // }
+    // onchange()
+
+    
+    var arr = []
+    var tel = document.querySelector("#category")
+    var option;
+    for (var i = 0; i < mydata.length; i++) {
+        //console.log(i)
+        const { name, code } = mydata[i]
+        // console.log(i, name, code)
+        //    var text = document.createTextNode(name);
+        var value = document.createTextNode(code);
+        var option = document.createElement("OPTION");
+        option.innerHTML = `+${code}  `
+        //option.appendChild(text)
+
+        option.setAttribute("value", code)
+       // var value = e.options[e.selectedIndex].value
+       // console.log(value, option.value)
+        tel.insertBefore(option, tel.lastChild)
+    }
+
+    function addItem(event) {
+        event.preventDefault();
+
+        var email = document.querySelector("#email").value
+        var phone = document.querySelector("#mobile").value
+
+         console.log("contact",  phone,typeof phone)
+function ValidateEmail(inputText, phone)
+{
+    let num= /^\d+$/
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(!inputText.match(mailformat) )
+
+{
+alert("You have entered aninvalid email address");
+document.myform.email.focus();
+return false;
+}
+else if(!num.test(phone) || phone.length!=10)
+{
+alert("You have entered an invalid Mobile number");
+document.myform.phone.focus();
+return false;
+}
+
+}
+ValidateEmail(email, phone)
+
+        var contact = {
+            itememail: email,
+            itemmobile: phone,
+            code:tel.options[tel.selectedIndex].value
+        }
+
+        arr.push(contact)
+//var value = e.options[e.selectedIndex].value
+        // console.log("arr", option.value ,tel.options[tel.selectedIndex].value)
+
+        localStorage.setItem("survey", JSON.stringify(arr))
+        
+      window.location.href = "thankyou.html"
+    }
+
+   
+
+</script>

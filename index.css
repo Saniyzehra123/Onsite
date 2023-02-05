@@ -1,0 +1,320 @@
+
+@media only screen and (max-width: 375px) {
+    .surveycontainer{
+        border: 2px solid black;
+        border-radius:5px ;
+        /* background-color: aqua; */
+        background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-modern-and-full-of-creative-business-book-cover-background-picture-image_540960.jpg);
+        background-repeat: no-repeat; 
+   
+        width: 100%;
+        height: 500px;
+        justify-content: center;
+     
+      }
+    .left{
+      display: none;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+        
+     text-align: center;
+    }
+    h2{
+        margin-left: 10%;
+    }
+    p{
+        margin-left: 30%;
+    }
+  
+    .logo{
+        /* background-color: aqua; */
+        width: 60%;
+        height: 60px;   
+        margin-top: 7%;
+        margin-left: 25%;  
+    }
+    .logo>img{
+        object-fit:contain;
+        width: 100%;
+        height: 100%;
+    }
+    input:nth-child(1){
+        width: 100%;
+        height: 35px;
+        margin-left: 20%;
+        
+    } 
+    input:nth-child(2){
+        width: 68%;
+        height: 35px;
+        /* border: none; */
+        margin-left:6.7%;
+    }
+    input:nth-child(3){
+        width: 100%;
+        height: 35px;
+        margin-left: 20%;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(90, 87, 87);
+    }
+    input:nth-child(3):hover{
+        background-color:  rgb(33, 30, 30);
+        color: rgb(249, 246, 246);
+    }
+    #myform>div{
+    /* background-color: brown; */
+        width:100%;
+        height: 150px;
+        flex-wrap: wrap;
+        /* margin: 10px auto; */
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .country{
+        width: 60%;
+        height: 40px;
+        margin: auto;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        border: 2px slategray;
+        /* justify-content:center; */
+        /* background-color: blueviolet; */
+    }
+ 
+    .select{
+        width: 10%;
+        height: 30px;
+        /* background-color: yellow; */
+    }
+  
+    #category{
+           height: 40px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .surveycontainer{
+        border: 2px solid black;
+        border-radius:5px ;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+      }
+    .left{
+        /* border: 1px solid rgb(216, 44, 44); */
+        width: 50%;
+    }
+    .right{
+        /* border: 1px solid rgb(47, 44, 216); */
+        width: 50%;
+        
+    }
+    h2{
+        margin-left: 37%;
+    }
+    p{
+        margin-left: 33%;
+    }
+    .profile{
+        width: 70%;
+        height: 500px;
+        margin-left: 15%;
+    }
+    .profile>img{
+        object-fit:cover;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .logo{
+        width: 40%;
+        height: 100px;   
+        margin-top: 7%;
+        margin-left: 25%;  
+    }
+    .logo>img{
+        object-fit:contain;
+        width: 100%;
+        height: 100%;
+    }
+    input:nth-child(1){
+        width: 50%;
+        height: 35px;
+        margin-left: 20%;
+    }
+    input:nth-child(2){
+        width: 68%;
+        height: 35px;
+        /* border: none; */
+        margin-left:6.7%;
+    }
+    input:nth-child(3){
+        width: 53%;
+        height: 35px;
+        margin-left: 20%;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(90, 87, 87);
+    }
+    input:nth-child(3):hover{
+        background-color:  rgb(33, 30, 30);
+        color: rgb(249, 246, 246);
+    }
+    #myform>div{
+    /* background-color: brown; */
+        width:80%;
+        height: 150px;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .country{
+        width: 60%;
+        height: 40px;
+        margin: auto;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        border: 2px slategray;
+        /* justify-content:center; */
+        /* background-color: blueviolet; */
+    }
+ 
+    .select{
+        width: 10%;
+        height: 30px;
+        background-color: yellow;
+    }
+  
+    #category{
+           height: 40px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .surveycontainer{
+        border: 2px solid black;
+        border-radius:5px ;
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        flex-direction: row;
+        background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-vector-abstract-geometric-background-irregular-shapes-picture-image_735185.jpg);
+       
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    
+    }
+    .left{
+        /* background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-vector-abstract-geometric-background-irregular-shapes-picture-image_735185.jpg); */
+       /* background-position: center; */
+       background-position-y: center;
+        background-repeat: no-repeat; 
+        background-size:cover; 
+        /* border: 1px solid rgb(216, 44, 44); */
+        width: 50%;
+    }
+    .right{
+        /* border: 1px solid rgb(47, 44, 216); */
+        width: 50%;
+       
+    }
+    h2{
+        margin-left: 37%;
+    }
+    p{
+        margin-left: 33%;
+    }
+    .profile{
+        width: 70%;
+        height: 500px;
+        margin-left: 15%;
+
+    }
+    .profile>img{
+        object-fit:cover;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .logo{
+        width: 40%;
+        height: 100px;   
+        margin-top: 7%;
+        margin-left: 25%;  
+    }
+    .logo>img{
+        object-fit:contain;
+        width: 100%;
+        height: 100%;
+    }
+    input:nth-child(1){
+        width: 50%;
+        height: 35px;
+        margin-left: 20%;
+    }
+    input:nth-child(2){
+        width: 68%;
+        height: 35px;
+        /* border: none; */
+        margin-left:6.7%;
+    }
+    input:nth-child(3){
+        width: 53%;
+        height: 35px;
+        margin-left: 20%;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(90, 87, 87);
+    }
+    input:nth-child(3):hover{
+        background-color:  rgb(33, 30, 30);
+        color: rgb(249, 246, 246);
+    }
+    #myform>div{
+    /* background-color: brown; */
+        width:80%;
+        height: 150px;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .country{
+        width: 60%;
+        height: 40px;
+        margin: auto;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        border: 2px slategray;
+        /* justify-content:center; */
+        /* background-color: blueviolet; */
+    }
+ 
+    .select{
+        width: 10%;
+        height: 30px;
+        /* background-color: yellow; */
+    }
+  
+    #category{
+           height: 40px;
+    }
+
+}

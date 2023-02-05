@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="thank.css" </head>
+</head>
+<body>
+    <div class="container">
+       
+        
+    </div>
+</body>
+</html>
+
+<script>
+
+var thank =(JSON.parse(localStorage.getItem("survey")));
+
+ thank.map(function(e){
+
+    // var  setemail =document.createElement("h1");
+    // setemail.innerHTML=e.itememail;
+
+    // var  setnum =document.createElement("h2");
+    // setnum.innerHTML=e.itemmobile;
+    //  console.log(setemail)
+    // text1.append(setemail,setnum)
+ 
+    var text1 = document.createElement("h4")
+    // text1.style.padding="auto"
+    text1.innerHTML=`"Thanks a ton for taking out your precious time and for completing the survey Email Address ${e.itememail} Contact Number ${e.code}- ${e.itemmobile} "`
+
+document.querySelector(".container").append(text1)
+ })
+</script>
+ 
